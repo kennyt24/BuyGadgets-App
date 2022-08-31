@@ -29,3 +29,5 @@ This is achieved with Jason webtoken, Cookies, password hashing and salting
 
 Link to article
 https://dev.to/kennyt24/major-differences-between-encryption-hashing-and-salting-2b1n
+
+Heroku link https://buygadget.herokuapp.com/
