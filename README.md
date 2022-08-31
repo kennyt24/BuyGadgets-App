@@ -1,13 +1,13 @@
 # BuyGadgets-App
 
-# Stack used
+Stack Used
 
-Node.js
-Mongoose
-Mongoclient 
-Jsonweb token
-Bcrypt 
-Nodemon.
+1. Node.js
+2. Mongoose
+3. Mongoclient 
+4. Jsonweb token
+5. Bcrypt 
+6. Nodemon.
 
 Node dev Architecture
 MVC
