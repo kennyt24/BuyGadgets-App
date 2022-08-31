@@ -1,23 +1,20 @@
 const User = require('../model/usermode');
-const laptops = require('../model/adminmodel')
-
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const { response } = require('../app');
-const { model } = require('mongoose');
+
 
 
 exports.userRegister = async(req, res) => {
     try {
         const{phone, email, FirstName,
-            LastName, password
+            LastName, password,role,
             }=req.body
        
         const salt = await bcrypt.genSalt(10);
         const harsh = await bcrypt.hash(password, salt);
         const newUser = await User.create({phone, email, FirstName,
-            LastName, password:harsh});
-            return res.status(201).json({message:"User has been registered", newUser});
+            LastName, role, password:harsh});
+            return res.status(201).json({message:"User has been registered", newUser, userId:_id});
     } catch (error) {
         console.error(error);
     }

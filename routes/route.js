@@ -1,5 +1,6 @@
 const express = require('express');
 
+const isAdmin = require('../middleware/auth');
 const {
     userRegister,
     userLogin,
@@ -7,7 +8,7 @@ const {
     getbyemail,
     
     
-} = require('../Controller/user.controller');
+} = require('../controller/user.controller');
 
 const router = express.Router();
 
@@ -28,4 +29,3 @@ router.get('/:email', getbyemail);
 //router.get('/view/laptops', ViewLaptops);
 
 module.exports = router;
-//Router.get('/: email ', getbyemail)

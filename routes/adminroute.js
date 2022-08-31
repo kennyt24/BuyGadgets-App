@@ -1,13 +1,12 @@
 const express = require('express');
 const {
-    postlaptop,
-    getlaptops,
-} = require('../Controller/admin.controller');
+   postlaptop,
+   getlaptops, } = require('../Controller/admin.controller');
 
-const router = express.Router();
+ const router = express.Router();
 
-//admin  uploading laptop
-router.post('/upload', postlaptop);
+// admin  uploading laptop
+ router.post('/upload', postlaptop);
 
 router.get('/viewlaptops', getlaptops);
 

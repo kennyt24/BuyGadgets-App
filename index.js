@@ -22,9 +22,6 @@ app.all('*',(req, res) => {
     res.status(404).json({messag: '404 page'});
 });
 
-
-
-
 // server listening 
 server.listen(port, () => {
   console.log(`Server running on port ${port}`);

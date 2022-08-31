@@ -1,7 +1,13 @@
 const mongoose = require('mongoose');
-const AdminSchema = new mongoose.Schema({
+const laptopSchema = new mongoose.Schema({
+  
+    UserId:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    },
+
     LaptopName:{
-        type: 'string',
+        type: String,
     },
     model:{
         type:String,
@@ -18,4 +24,4 @@ const AdminSchema = new mongoose.Schema({
     timestamps: true,
 },
 )
-module.exports = mongoose.model ('admin', AdminSchema )
+module.exports = mongoose.model ('Laptop', laptopSchema )
