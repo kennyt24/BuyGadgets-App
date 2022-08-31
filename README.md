@@ -31,3 +31,4 @@ Link to article
 https://dev.to/kennyt24/major-differences-between-encryption-hashing-and-salting-2b1n
 
 Heroku link https://buygadget.herokuapp.com/
+https://documenter.getpostman.com/view/22346934/VUxNSTUM
