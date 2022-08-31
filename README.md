@@ -21,7 +21,11 @@ Solutions achieved
 
 4. Both basic users and admin are able to view all laptops uploaded
 
-5Admin are able to view all registered users
+5. Admin are able to view all registered users
+
 
 Data Security
 This is achieved with Jason webtoken, Cookies, password hashing and salting
+
+Link to article
+https://dev.to/kennyt24/major-differences-between-encryption-hashing-and-salting-2b1n
