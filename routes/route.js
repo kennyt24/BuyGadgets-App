@@ -1,16 +1,13 @@
 const express = require('express');
+const router = express.Router();
 
 const isAdmin = require('../middleware/auth');
 const {
-    userRegister,
-    userLogin,
-    getUsers,
-    getbyemail,
-    
-    
-} = require('../controller/user.controller');
-
-const router = express.Router();
+  userRegister,
+  userLogin,
+  getUsers,
+  getbyemail,
+} = require('../Controller/user.controller');
 
 //User Registration
 router.post('/register', userRegister);
@@ -23,7 +20,6 @@ router.get('/findusers', getUsers);
 
 //get users by email address
 router.get('/:email', getbyemail);
-
 
 //View all Laptops by both admin and user
 //router.get('/view/laptops', ViewLaptops);
